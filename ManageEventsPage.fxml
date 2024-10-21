@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dsaproject.ManageEventsController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="-2.0" layoutY="-1.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox prefHeight="397.0" prefWidth="175.0">
+                     <children>
+                        <Button fx:id="HomeButton" layoutX="10.0" layoutY="76.0" mnemonicParsing="false" onAction="#gohome" prefHeight="73.0" prefWidth="175.0" style="-fx-background-color: #e6742e;" styleClass="button-style" text="Home" textFill="#2f190d">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="createvents_button" mnemonicParsing="false" onAction="#createEvents" prefHeight="73.0" prefWidth="175.0" style="-fx-background-color: #11919f;" styleClass="button-style" text="Create Events" textFill="WHITE">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="vieweventsbutton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#viewEvents" prefHeight="73.0" prefWidth="175.0" style="-fx-background-color: #e6742e;" styleClass="button-style" text="Modify Events" textFill="#2f190d">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Activitiesbutton" layoutX="10.0" layoutY="275.0" mnemonicParsing="false" onAction="#viewActivities" prefHeight="73.0" prefWidth="175.0" style="-fx-background-color: #11919f;" styleClass="button-style" text="Activities" textFill="WHITE">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="modifyVenues" layoutX="10.0" layoutY="142.0" mnemonicParsing="false" onAction="#modifyvenues" prefHeight="73.0" prefWidth="175.0" style="-fx-background-color: #e6742e;" styleClass="button-style" text="Modify Venues" textFill="#2f190d">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="menuButton" layoutX="10.0" layoutY="303.0" mnemonicParsing="false" onAction="#viewFoodsOnMenu" prefHeight="73.0" prefWidth="175.0" style="-fx-background-color: #11919f;" styleClass="button-style" text="Menu" textFill="#f6f3f1">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="BillsButton" layoutX="10.0" layoutY="293.0" mnemonicParsing="false" onAction="#viewBills" prefHeight="73.0" prefWidth="175.0" style="-fx-background-color: #e6742e;" styleClass="button-style" text="Bill$" textFill="#f6f3f1">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="LogoutButton" layoutX="10.0" layoutY="275.0" mnemonicParsing="false" onAction="#logOut" prefHeight="73.0" prefWidth="175.0" style="-fx-background-color: #11919f;" styleClass="button-style" text="LogOut">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="MainContentPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+                     <TextFlow fx:id="" />
+                  </ScrollPane>
+                  <ImageView fx:id="sunsetimage" fitHeight="400.0" fitWidth="403.0" layoutY="-2.0" opacity="0.21" pickOnBounds="true">
+                     <image>
+                        <Image url="@sunsetbackground.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextFlow fx:id="viewSummariesfield" layoutY="24.0" prefHeight="373.0" prefWidth="403.0" />
+                  <Label layoutX="93.0" layoutY="1.0" prefHeight="22.0" prefWidth="312.0" text="EVENT SUMMARIES" textFill="#2d1a5e">
+                     <font>
+                        <Font name="Cooper Black" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

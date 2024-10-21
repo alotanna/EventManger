@@ -1,0 +1,73 @@
+/* styles.css */
+#viewSummariesfield {
+    -fx-font-family: "Bookman Old Style";
+    -fx-font-size: 14px;
+    -fx-text-fill: #2f190d; /* Dark brown color for text */
+    -fx-padding: 10px;
+    -fx-background-color: #f5f5f5; /* Light gray background */
+    -fx-border-color: #e6742e; /* Border color */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+#eventsListView {
+    -fx-font-family: "Bookman Old Style";
+    -fx-font-size: 14px;
+    -fx-text-fill: #2f190d; /* Dark brown color for text */
+    -fx-padding: 10px;
+    -fx-background-color: #f5f5f5; /* Light gray background */
+    -fx-border-color: #e6742e; /* Border color */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+/* Define a common style for all buttons */
+.button-style {
+    -fx-background-color: #e6742e; /* Button background color */
+    -fx-text-fill: #2f190d; /* Button text color */
+    -fx-font-family: "Bookman Old Style"; /* Font family */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-weight: bold; /* Font weight */
+    -fx-padding: 10px 20px; /* Padding around text */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-background-radius: 5px; /* Rounded corners for background */
+    -fx-border-color: transparent; /* No border */
+    -fx-cursor: hand; /* Cursor changes to hand on hover */
+}
+
+/* Define a hover effect for buttons */
+.button-style:hover {
+    -fx-background-color: #d46a1c; /* Darker background color on hover */
+    -fx-text-fill: #ffffff; /* Text color on hover */
+}
+
+/* Define a pressed effect for buttons */
+.button-style:pressed {
+    -fx-background-color: #b55a1a; /* Even darker background color when pressed */
+    -fx-text-fill: #ffffff; /* Text color when pressed */
+}
+
+/* Define a common style for all buttons */
+#button-style {
+    -fx-background-color: #e6742e; /* Button background color */
+    -fx-text-fill: #2f190d; /* Button text color */
+    -fx-font-family: "Bookman Old Style"; /* Font family */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-weight: bold; /* Font weight */
+    -fx-padding: 10px 20px; /* Padding around text */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-background-radius: 5px; /* Rounded corners for background */
+    -fx-border-color: transparent; /* No border */
+    -fx-cursor: hand; /* Cursor changes to hand on hover */
+}
+/* Define a hover effect for buttons */
+#button-style:hover {
+    -fx-background-color: #d46a1c; /* Darker background color on hover */
+    -fx-text-fill: #ffffff; /* Text color on hover */
+}
+
+/* Define a pressed effect for buttons */
+#button-style:pressed {
+    -fx-background-color: #b55a1a; /* Even darker background color when pressed */
+    -fx-text-fill: #ffffff; /* Text color when pressed */
+}

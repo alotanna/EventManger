@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="397.3333333333333" prefWidth="416.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dsaproject.ActivityManagerController" stylesheets="@styles.css">
+   <children>
+      <Pane layoutY="1.0" prefHeight="397.0" prefWidth="416.0" style="-fx-background-color: #11919f;">
+         <children>
+            <Pane layoutX="17.0" layoutY="19.0" prefHeight="357.0" prefWidth="380.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <TextField fx:id="activityname" layoutX="22.0" layoutY="28.0" prefHeight="25.0" prefWidth="344.0" />
+                  <Label layoutX="25.0" layoutY="6.0" prefHeight="25.0" prefWidth="83.0" text="ACTIVTY NAME">
+                     <font>
+                        <Font name="Candara Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="eventID" layoutX="23.0" layoutY="90.0" prefHeight="25.0" prefWidth="344.0" />
+                  <TextField fx:id="activityDescription" layoutX="22.0" layoutY="146.0" prefHeight="79.0" prefWidth="344.0" />
+                  <Label layoutX="25.0" layoutY="62.0" prefHeight="25.0" prefWidth="54.0" text="EVENT ID">
+                     <font>
+                        <Font name="Candara Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="117.0" prefHeight="25.0" prefWidth="83.0" text="DESCRIPTION">
+                     <font>
+                        <Font name="Candara Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="saveandExit" layoutX="271.0" layoutY="315.0" mnemonicParsing="false" onAction="#saveAndExit" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #11919f;" text="Save and Exit" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="deleteactivty" layoutX="150.0" layoutY="315.0" mnemonicParsing="false" onAction="#deleteActivity" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #11919f;" text="Delete Activty" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="viewActivity" layoutX="28.0" layoutY="315.0" mnemonicParsing="false" onAction="#viewActivity" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #11919f;" text="View Activities" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="63.0" fitWidth="102.0" layoutX="28.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@activity.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="63.0" fitWidth="102.0" layoutX="161.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@activty2.jpeg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="63.0" fitWidth="102.0" layoutX="271.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@actiivity3.jpeg" />
+                     </image>
+                  </ImageView>
+               </children>
+               <effect>
+                  <Glow level="0.35" />
+               </effect>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
